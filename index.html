@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNPREDICTABLE ATMOSPHERE_LUCIA REBOLINO</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    
+    
+    <script>
+//pop up url middle of the screen
+function createPopupWin(pageURL, pageTitle,
+    popupWinWidth, popupWinHeight) {
+var left = (screen.width - popupWinWidth) / 2;
+var top = (screen.height - popupWinHeight) / 3;
+
+var myWindow = window.open(pageURL, pageTitle,
+    'resizable=yes, width=' + popupWinWidth
+    + ', height=' + popupWinHeight + ', top='
+    + top + ', left=' + left);
+}
+
+//pop up inizio
+$(document).mouseup(function(e) 
+{
+    var container = $("#popup");
+ 
+    
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        container.hide();
+    }
+});
+
+
+//hoverimages text
+$(document).ready(function(){
+
+
+$(".hovertext").hover(
+
+    // mouse-enter event
+    function (e) {
+
+        var hoverid = e.currentTarget.id;
+
+        console.log(hoverid)
+
+        console.log("#" + hoverid + "image")
+
+        // changing the color
+        $("#" + hoverid + "image").css('display', 'block')
+    },
+
+ 
+ 
+    // mouse-leave event
+    function () {
+
+        // Putting the color back
+        $(".hoverimage").css('display', 'none')
+    }) 
+
+    
+
+    
+})
+
+$(document).ready(function(){
+
+
+$(".hovernumber").hover(
+
+    // mouse-enter event
+    function (e) {
+
+        var hoverid = e.currentTarget.id;
+
+        console.log(hoverid)
+
+        console.log("#" + hoverid + "image")
+
+        // changing the color
+        $("#" + hoverid + "image").css('display', 'block')
+    },
+
+ 
+ 
+    // mouse-leave event
+    function () {
+
+        // Putting the color back
+        $(".hoverimage").css('display', 'none')
+    }) 
+
+    
+
+    
+})
+
+
+//change image spectrum fight 1
+function changeImage1() {
+    if (document.getElementById("imgClickAndChange").src == "https://lh3.googleusercontent.com/OrAi58eOpt7F0ODcuyouzwZUnnlmWAXlT1qsfi3U-ygNsjPH1RdXcin9HKOmCBKBg_IcrOhgYf7VSN6y6Afdwjl-65rmJeV0oHsYctzaADIbJUIdivZs_WGFux0yqAU_0vIsTOGuJA=w2400"){
+        document.getElementById("imgClickAndChange").src = "https://lh3.googleusercontent.com/t0lbPTsQiKtnzpfnjVnOr8o6YblTVvAF-5UOSDK8h5sCKrJOn8rm75ZGmzQHVaN80HlTvPwxcwSqx-ww0brz_4dfZ7qxrsj-kqEVxy_EvnPUr9-kWQLkdkzfU_Ki2h83GOk1h6NRXw=w2400";
+    } else {
+        document.getElementById("imgClickAndChange").src = "https://lh3.googleusercontent.com/OrAi58eOpt7F0ODcuyouzwZUnnlmWAXlT1qsfi3U-ygNsjPH1RdXcin9HKOmCBKBg_IcrOhgYf7VSN6y6Afdwjl-65rmJeV0oHsYctzaADIbJUIdivZs_WGFux0yqAU_0vIsTOGuJA=w2400";
+    }
+}
+
+
+//change image spectrum hurricane
+
+function changeImage2() {
+    if (document.getElementById("imgClickAndChange2").src == "https://lh3.googleusercontent.com/7UenzULh7GjtZxD6WnJn67BPdQGbWJXs1MttmIo4CnhMIk4ZYBWbvLDRT40LNTq5enF1xUf0_EgL4fvjuGmnxF6jKY5vSo5xNADATFrPj2vY5mMfwMw2SQQvNezWeYIZR3oGFPv6Ig=w2400"){
+        document.getElementById("imgClickAndChange2").src = "https://lh3.googleusercontent.com/jGsepra8AxsGxH9QhsaOs0fGz-ULDiJKaPhMxcEDQfsujEEiVllY7vstVmh5SKWt0H4UTD2kMvlQ7CWRTQhh8pg-5TlJn4QXvOOXMOW4VU5an2TSzMaihgq1Mi3fdnBQD08lKKCNPg=w2400";
+    } else {
+        document.getElementById("imgClickAndChange2").src = "https://lh3.googleusercontent.com/7UenzULh7GjtZxD6WnJn67BPdQGbWJXs1MttmIo4CnhMIk4ZYBWbvLDRT40LNTq5enF1xUf0_EgL4fvjuGmnxF6jKY5vSo5xNADATFrPj2vY5mMfwMw2SQQvNezWeYIZR3oGFPv6Ig=w2400";
+    }
+}
+
+//change image box percentage
+
+function changeImage3() {
+    if (document.getElementById("imgClickAndChange3").src == "https://lh3.googleusercontent.com/AWwNrYbvcFOui2fSPVkbdABZHmvnM3hEwZU2EhmRM3xVKEBavjq0LlDNBVpAfC0FJq8kQsf5p0kKhjXTNbEO91lsVtXBvr16llw2Sofb1rY2JI8oDM_ZXfdMb7oNPDjxEDsULuAiRg=w2400")
+    {
+        document.getElementById("imgClickAndChange3").src = "https://lh3.googleusercontent.com/ijLaNBKxpeSKNp8pwS8Ex36qUJfbXRsghYfm93HUlu0dqjBdxE2b_VkBjho5NWXlXJg-SdGJN9Fz57iCzDNvnIGSVZXVk0KhV936NzE2vcvBKsqhW-GuvbyEpzlwgg5lsXbuihjAxA=w2400"; 
+    } 
+   else if (document.getElementById("imgClickAndChange3").src = "https://lh3.googleusercontent.com/ijLaNBKxpeSKNp8pwS8Ex36qUJfbXRsghYfm93HUlu0dqjBdxE2b_VkBjho5NWXlXJg-SdGJN9Fz57iCzDNvnIGSVZXVk0KhV936NzE2vcvBKsqhW-GuvbyEpzlwgg5lsXbuihjAxA=w2400") 
+   {
+        document.getElementById("imgClickAndChange3").src = "https://lh3.googleusercontent.com/caXd8xujLjsJbg_Ep_fSAgy1KXf_gvQ7iKkJQxygtkxL1MeM0mYZ3RkikdjGCetjugvj4YsDKUPcDh68SpS99li3R4rPhzqCAtmgyxOqaOpCoh4LWSUHLVFTsHDTh36OEJY0Kdwung=w2400";
+    }
+}
+
+
+//change image doc washingotn
+
+function changeImage4() {
+    if (document.getElementById("imgClickAndChange4").src == "https://lh3.googleusercontent.com/y9aBRQrvBOBfbGwgXoDC7oHPHoTJWYJ2d-bEddiz-lYfb4bJIcSG2eFbjOcoSkwPtUEB27bEthMvtRB-EOWON9s5tbTcHfF-ZdiR4XZSn6X04zOHn0JuLcI2x5Wc2C4qpGaahdH1hQ=w2400"){
+        document.getElementById("imgClickAndChange4").src = "https://lh3.googleusercontent.com/O9xpnWHQRs0zA9THXS7OOfYp_cDyrYCq2UH8m7mhwUzTdCkF5HxVl4WL1zG0XncTF2rFdkHLBM43_EgD-k4Xjn59Kzcpx-_W22_mJT6yYjBgW4cQjLh4coxbyeaXlFTN84AJNxLyyA=w2400";
+    } else {
+        document.getElementById("imgClickAndChange4").src = "https://lh3.googleusercontent.com/y9aBRQrvBOBfbGwgXoDC7oHPHoTJWYJ2d-bEddiz-lYfb4bJIcSG2eFbjOcoSkwPtUEB27bEthMvtRB-EOWON9s5tbTcHfF-ZdiR4XZSn6X04zOHn0JuLcI2x5Wc2C4qpGaahdH1hQ=w2400";
+    }
+}
+
+
+//change image box twitter
+
+function changeImage5() {
+    if (document.getElementById("imgClickAndChange5").src == "https://lh3.googleusercontent.com/AWwNrYbvcFOui2fSPVkbdABZHmvnM3hEwZU2EhmRM3xVKEBavjq0LlDNBVpAfC0FJq8kQsf5p0kKhjXTNbEO91lsVtXBvr16llw2Sofb1rY2JI8oDM_ZXfdMb7oNPDjxEDsULuAiRg=w2400")
+    {
+        document.getElementById("imgClickAndChange5").src = "https://lh3.googleusercontent.com/UxD2DBYhGRLLYJ2KucwNqWgcbzbeB86oDK0bF4kv3xui0b-gHGxJok1SJrdJxDB2sqVMoN_tTXEt6VJ9CFLQSEGwyaHI-38vcnKp3aLHo4zIEklOZQ6x0CfYEPojvCCQJIsyQF2Y6w=w2400"; 
+    } 
+    
+   else if (document.getElementById("imgClickAndChange5").src == "https://lh3.googleusercontent.com/UxD2DBYhGRLLYJ2KucwNqWgcbzbeB86oDK0bF4kv3xui0b-gHGxJok1SJrdJxDB2sqVMoN_tTXEt6VJ9CFLQSEGwyaHI-38vcnKp3aLHo4zIEklOZQ6x0CfYEPojvCCQJIsyQF2Y6w=w2400") 
+   {
+        document.getElementById("imgClickAndChange5").src = "https://lh3.googleusercontent.com/uTyWmGpRSqttJjsfwwVUEVDyMXJPiRFYnOjtmiWvQ-bdt0DBDjD7DVttQZoTnEBA-0yBSp2MsDeQk-7lroXJG1hkLq-j_5SBf4fHNGJqejJaN3St748LPPHXP0otV6mqKzwlHhbXrg=w2400";
+    }
+
+    else if (document.getElementById("imgClickAndChange5").src == "https://lh3.googleusercontent.com/uTyWmGpRSqttJjsfwwVUEVDyMXJPiRFYnOjtmiWvQ-bdt0DBDjD7DVttQZoTnEBA-0yBSp2MsDeQk-7lroXJG1hkLq-j_5SBf4fHNGJqejJaN3St748LPPHXP0otV6mqKzwlHhbXrg=w2400") 
+   {
+        document.getElementById("imgClickAndChange5").src = "https://lh3.googleusercontent.com/_JQXRornmaNKtE-No5Q-XRsfzgmx9_cYjH2SkNYvr38fCzgE3_fpc4xIT-tDdKM6tbGcaDFvWex_yR-5DOsfOP8n3Bjd5LrgLHuJrwaOZBT0ZUr6LfU4LwiQyxHFl1fecN0rLga9Ew=w2400";
+    }
+
+    else if (document.getElementById("imgClickAndChange5").src == "https://lh3.googleusercontent.com/_JQXRornmaNKtE-No5Q-XRsfzgmx9_cYjH2SkNYvr38fCzgE3_fpc4xIT-tDdKM6tbGcaDFvWex_yR-5DOsfOP8n3Bjd5LrgLHuJrwaOZBT0ZUr6LfU4LwiQyxHFl1fecN0rLga9Ew=w2400") 
+   {
+        document.getElementById("imgClickAndChange5").src = "https://lh3.googleusercontent.com/LGUdcZhH7e6ahzaLkvXQlrC_5W9cDf0pXrg4YEsCjjj_8OoJtnb_-IueVa0mqyTrTwSyt0-y8ykH7UbQWC1lb20bSIF8Pcv44M7-CywvMN4XTui7pA4jtqkmn908WejvgLQpIpXRyA=w2400";
+    }
+
+    else if (document.getElementById("imgClickAndChange5").src == "https://lh3.googleusercontent.com/LGUdcZhH7e6ahzaLkvXQlrC_5W9cDf0pXrg4YEsCjjj_8OoJtnb_-IueVa0mqyTrTwSyt0-y8ykH7UbQWC1lb20bSIF8Pcv44M7-CywvMN4XTui7pA4jtqkmn908WejvgLQpIpXRyA=w2400") 
+   {
+        document.getElementById("imgClickAndChange5").src = "https://lh3.googleusercontent.com/4UmDyhiavunjnuRzGmsvS3r6u2NFuh9Qe7ap6_Hs5RzwLPO_j-bPkA5uRWvIQCh3LfPqger60mkKctMqR0plFvUggBlVQvtPh0-FJgTAbg5Oo5bCe4AS3wad1ns9uRDPpuxOE4n18Q=w2400";
+    }
+}
+
+//change image spectrum
+
+function changeImage6() {
+    if (document.getElementById("imgClickAndChange6").src == "https://lh3.googleusercontent.com/AWwNrYbvcFOui2fSPVkbdABZHmvnM3hEwZU2EhmRM3xVKEBavjq0LlDNBVpAfC0FJq8kQsf5p0kKhjXTNbEO91lsVtXBvr16llw2Sofb1rY2JI8oDM_ZXfdMb7oNPDjxEDsULuAiRg=w2400")
+    {
+        document.getElementById("imgClickAndChange6").src = "https://lh3.googleusercontent.com/42xC6PIS0-mlfePhWo6O2nCRFlRFoWXeF-ZTq_X2Vlgh8c_Mm6YGoq54eq35AeqspXO61P5YonEeyEfzTp60wjR7iNoCkXSw3EorI2CvHsGncSkWOz8x67l7cOAfjW4nrKl42yomEw=w2400"; 
+    } 
+    
+   else if (document.getElementById("imgClickAndChange6").src == "https://lh3.googleusercontent.com/42xC6PIS0-mlfePhWo6O2nCRFlRFoWXeF-ZTq_X2Vlgh8c_Mm6YGoq54eq35AeqspXO61P5YonEeyEfzTp60wjR7iNoCkXSw3EorI2CvHsGncSkWOz8x67l7cOAfjW4nrKl42yomEw=w2400") 
+   {
+        document.getElementById("imgClickAndChange6").src = "https://lh3.googleusercontent.com/gmZCfAFmzse0XMTHEUnS02EXU_iJP_47LohjlEThSaqiixLDgpBR7wM-YjtfX4hCkgsi3WyMifFrWFsrW22cYe3iayGsbzZswPX01oNOsjoejKoALVG2FWqJP5VhlG_h53V290FNcQ=w2400";
+    }
+
+    else if (document.getElementById("imgClickAndChange6").src == "https://lh3.googleusercontent.com/gmZCfAFmzse0XMTHEUnS02EXU_iJP_47LohjlEThSaqiixLDgpBR7wM-YjtfX4hCkgsi3WyMifFrWFsrW22cYe3iayGsbzZswPX01oNOsjoejKoALVG2FWqJP5VhlG_h53V290FNcQ=w2400") 
+   {
+        document.getElementById("imgClickAndChange6").src = "https://lh3.googleusercontent.com/_hfEjRSkUrJDLUKBKwE2jH6Qbia9wakogdxXUUu7B-ylmVVa7rPfYNle3Lv5BY_RBUnPejiRE9rERorb6Ir_aCcFpg9vOGge7tGAsmpDuDaZ5-3von6s97U3GtK5hI6tJs5eB3W9eA=w2400";
+    }
+
+}
+
+
+//change image spectrum allocation US
+
+function changeImage7() {
+    if (document.getElementById("imgClickAndChange7").src == "https://lh3.googleusercontent.com/KlX8O4sXvAIE-_mmbxb2VyN6pERobo5CdVQ7mCHpFPzd_mdBZzuqQB_ZU_t9qhlKgybYJw7tUnwFSLV-YPA-eTPC1HGlLp3G76J695vElNqw-JLn1caYsCPkyakk5u8oyzhFxvh2gw=w2400")
+    {
+        document.getElementById("imgClickAndChange7").src = "https://lh3.googleusercontent.com/r4xIQgZz93Gsg8h39elDPPaHj6lhjNK0rblqdSiYNI7WO3UpxpWkuUF2HUfFzJvOdwecm3QaYp6ztV7xetfl9O4zc2P_LwujIvHgO5MRqZAtNocCUt_BiILGZJurBH8MMTBGdvFfxg=w2400"; 
+    } 
+    
+
+}
+
+//change image weather 24ghz
+
+function changeImage8() {
+    if (document.getElementById("imgClickAndChange8").src == "https://lh3.googleusercontent.com/KBGn0G7A-vC-HZmsR4VHip9TwWPY-TttEqXCJYv-9UDidRx0RbPOFlf2BW6ZOeEel61giUe83fquya6ErHBkx4LN3D7c5HbCwri_NLDXQqD0_V25rqFvroKesNZ585J6qlUfWxLQMQ=w2400")
+    {
+        document.getElementById("imgClickAndChange8").src = "https://lh3.googleusercontent.com/GzM8UfIzhSKmA-cg0OsC2UwJK3SPb-3HAX8rSDgLdHYZfqIBnq7CxbKU5ijd8_rBBpOBdr9rvIZla5BZ8OTbFI4crWpjbzjcc77QJ3eUGT0n4OT-J_OmKkVCaeGcO605zEUY7rXPKQ=w2400"; 
+    } 
+    
+
+}
+
+//change image interent
+
+function changeImage9() {
+    if (document.getElementById("imgClickAndChange9").src == "https://lh3.googleusercontent.com/L9s1zngO4w43ZCnt8gvzEc0Nj7LfwyT_87KFTk1Kh_FLTYgOs2cy1oIJNwZb8rdUpSh8X9WQ4zkiuOm_lnUGQ0_BMUC40Hb9r4azYlA2B4DOPz_IUQOBgwzcxgyl4L3S43HkC2MNYw=w2400")
+    {
+        document.getElementById("imgClickAndChange9").src = "https://lh3.googleusercontent.com/98cZzpQTO48idU3uPk-dVQkVWVEKuxWZaNQonS3ltK05TeRTM6_R7qTNpq39I2znsIHNVz9MVyelFi0Mx0cAnsfGBXUENlmTd-DT3RSmrGmsGBgCLwzLEBf0laCiSQuB89sT4v3Ljw=w2400"; 
+    } 
+    
+
+}
+
+
+//change image infrastructure
+
+function changeImage10() {
+    if (document.getElementById("imgClickAndChange10").src == "https://lh3.googleusercontent.com/PfSmJ7PXk7e35beMph6AtLP_aRbgBmpNfYQBcClGN0HtreXIJATqE0LApfemQk8vGPtOOkCZp2aQoLauIFgYX1zJtLOu4oCW5U3HswctRoDyHfmAp52wbtrMs8VoDlKGiHQkFkYOZA=w2400")
+    {
+        document.getElementById("imgClickAndChange10").src = "https://lh3.googleusercontent.com/2hS2pntOXAWJAQ1uiZOM8tSfsibsX-UJyMC7qm2PtJd5M7yoGTDcC7c4lAySN5VzcLSlIL0eyoEOnsm6Zmg9UWT6BYynSNV-n_svo2anUj69r3eMK_0bL7t__7sPqzDTnu31eut4hw=w2400"; 
+    } 
+    
+   else if (document.getElementById("imgClickAndChange10").src == "https://lh3.googleusercontent.com/2hS2pntOXAWJAQ1uiZOM8tSfsibsX-UJyMC7qm2PtJd5M7yoGTDcC7c4lAySN5VzcLSlIL0eyoEOnsm6Zmg9UWT6BYynSNV-n_svo2anUj69r3eMK_0bL7t__7sPqzDTnu31eut4hw=w2400") 
+   {
+        document.getElementById("imgClickAndChange10").src = "https://lh3.googleusercontent.com/YxSdaA_Tc7F5OfxIoqm26AOilxX_54GJdulnzVD81B4OoQrl06tgtpKzb8iAxZtw_aiWMGeORsYSq1QBxsKNQ9WEiVgyglAQsCYfJte0eXYwQBDA1DrcKPf4NnN19DyhOFxXWWGqRg=w2400";
+    }
+
+    else if (document.getElementById("imgClickAndChange10").src == "https://lh3.googleusercontent.com/YxSdaA_Tc7F5OfxIoqm26AOilxX_54GJdulnzVD81B4OoQrl06tgtpKzb8iAxZtw_aiWMGeORsYSq1QBxsKNQ9WEiVgyglAQsCYfJte0eXYwQBDA1DrcKPf4NnN19DyhOFxXWWGqRg=w2400") 
+   {
+        document.getElementById("imgClickAndChange10").src = "https://lh3.googleusercontent.com/Eh3FSnH6wezh6P6WdUWd0CMGj-H4slECS7ZGMXPkbKke5mmPe3a3suEbVGOTxXJ6HexhYiH-8Rf1mgOuM6O0vS_hv0bY_pOVNHnf-5HB6V0_l4p0xckrkbbvcZfaTZpiVDCPWkYqpA=w2400";
+    }
+
+    else if (document.getElementById("imgClickAndChange10").src == "https://lh3.googleusercontent.com/Eh3FSnH6wezh6P6WdUWd0CMGj-H4slECS7ZGMXPkbKke5mmPe3a3suEbVGOTxXJ6HexhYiH-8Rf1mgOuM6O0vS_hv0bY_pOVNHnf-5HB6V0_l4p0xckrkbbvcZfaTZpiVDCPWkYqpA=w2400") 
+   {
+        document.getElementById("imgClickAndChange10").src = "https://lh3.googleusercontent.com/amr2http5tcsObqm4s4OHDwTzHMbMmL6_BPUvHLrbQ7uY51Rk96tSFb_T7wgQaHYzkyoxM7H5w1rJOOQDfrZ1OAeG5CPj6S2RXSliCXJyRnOlE8E7DE2yh_kHP_sANJ3IqVRzqaHBg=w2400";
+    }
+
+}
+
+//change image MODEL
+
+function changeImage11() {
+    if (document.getElementById("imgClickAndChange11").src == "https://lh3.googleusercontent.com/mFutwVfmGNELdntdp8Rb7fhAzYIijYXHdRIjWVunkKWVTGJmKwdb6RNeD1_coFM13W5enaYACxTiFIBYYgfxIVJ2bus54HDZxXJgWsPib-sELoqmY2oFNBe3-eWi_jztGAMvaVUbVg=w2400")
+    {
+        document.getElementById("imgClickAndChange11").src = "https://lh3.googleusercontent.com/JTXmFsw7m5sDlS0lQ0Kd46vKnIS44qZ_fe1zNctS9Z5sUmi3EmdE0COiRLlT6sypeF5HLXfVcm5fSz8MqZb9d4lvFsIa-uVi1WM7kWfvu6rQt9XW4NuHhEFvenLx3zGpFDZXWU9c0g=w2400"; 
+    } 
+    
+   else if (document.getElementById("imgClickAndChange11").src == "https://lh3.googleusercontent.com/JTXmFsw7m5sDlS0lQ0Kd46vKnIS44qZ_fe1zNctS9Z5sUmi3EmdE0COiRLlT6sypeF5HLXfVcm5fSz8MqZb9d4lvFsIa-uVi1WM7kWfvu6rQt9XW4NuHhEFvenLx3zGpFDZXWU9c0g=w2400") 
+   {
+        document.getElementById("imgClickAndChange11").src = "https://lh3.googleusercontent.com/-hOsKZpcGgK-kWP1sDEuC-iI4jpGCV8gKzP2UCgJZ907AhGyoJ6eeg4BrrIRXmRxmWRTuBqKV96GWolG40gdNmBoAW6kDSqggglJkYF3x_UQRAKyCcP_OYiTcrRAGTO8gY8PEBKeGg=w2400";
+    }
+
+    else if (document.getElementById("imgClickAndChange11").src == "https://lh3.googleusercontent.com/-hOsKZpcGgK-kWP1sDEuC-iI4jpGCV8gKzP2UCgJZ907AhGyoJ6eeg4BrrIRXmRxmWRTuBqKV96GWolG40gdNmBoAW6kDSqggglJkYF3x_UQRAKyCcP_OYiTcrRAGTO8gY8PEBKeGg=w2400") 
+   {
+        document.getElementById("imgClickAndChange11").src = "https://lh3.googleusercontent.com/V_ifsugfWYFbzdOUIAVbzfDIHYDJCdUt7X1AVrvDaQzIoYE8zTvQN5_qsn6raMH9PIUK5FfQBTl3ubbUypQFO_ogyNcLrkwBYffyWW9XWay8pTDWfPtazh8iWHgmPkPrxr1tUNQKtw=w2400";
+    }
+
+    else if (document.getElementById("imgClickAndChange11").src == "https://lh3.googleusercontent.com/V_ifsugfWYFbzdOUIAVbzfDIHYDJCdUt7X1AVrvDaQzIoYE8zTvQN5_qsn6raMH9PIUK5FfQBTl3ubbUypQFO_ogyNcLrkwBYffyWW9XWay8pTDWfPtazh8iWHgmPkPrxr1tUNQKtw=w2400") 
+   {
+        document.getElementById("imgClickAndChange11").src = "https://lh3.googleusercontent.com/bvCAqT9foxtrLWdb1BtYH92pcUK714jERAPgULeYrWKO3yoaCqMGZvkfXkKBcJ9fka0O6cqJEvSFmB639ht_C0342rSLQG5wsgLPeGOMnBjuOh7Qd_mSg0y9l2zQAfBNyjFKGLDTYw=w2400";
+    }
+
+}
+
+
+//change image interent
+
+function changeImage12() {
+    if (document.getElementById("imgClickAndChange12").src == "https://lh3.googleusercontent.com/AWwNrYbvcFOui2fSPVkbdABZHmvnM3hEwZU2EhmRM3xVKEBavjq0LlDNBVpAfC0FJq8kQsf5p0kKhjXTNbEO91lsVtXBvr16llw2Sofb1rY2JI8oDM_ZXfdMb7oNPDjxEDsULuAiRg=w2400")
+    {
+        document.getElementById("imgClickAndChange12").src = "https://lh3.googleusercontent.com/ZtXuPVj8TtfWmuRgC-KGuGk_q3GhGRuLKCmgi_K60nlh44nqHoT90pY3rI5QJqmrCC-uvPASFOX2NlBwdHCJ8xCGgPmJyE_YZSvG5St32b06JoPv6DNF8O1_L1SXTeWkWX6uVBDgyQ=w2400"; 
+    } 
+    
+
+}
+
+//button click and show text
+function ShowAndHide() {
+    var x = document.getElementById('SectionName');
+    if (x.style.display == 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+function ShowAndHide2() {
+    var x = document.getElementById('SectionName2');
+    if (x.style.display == 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+
+
+    </script> 
+    
+    
+
+</head>
+
+
+
+
+
+
+<body>
+    <div class="footer">
+        
+        <button class="A" onclick = "createPopupWin('https://docs.google.com/spreadsheets/d/e/2PACX-1vS4JwYApUlCyEgnmJ46q1V0XAcJCRBAAQqEFpcYvadA0p6H6JL5hICNIeYbUnAAdGXLAmntPg8ssZhV/pubhtml',
+        'GeeksforGeeks Website', 1200, 650);">
+        <h2>UNPREDICTABLE ATMOSPHERE</h2>  
+        </button> 
+    </div>
+    
+<!--footer   
+    <div class="header">
+        <a class="highlight" href="www.bordoclima.com" target="_blank">
+            UNPPREDICTABLE ATMOSPHERE
+        </a>   
+    </div>--> 
+
+<!--left--> 
+    <div class="container">
+       
+
+        <div class="left">
+            <div id="hover1image" class="hoverimage ">
+                <img src="https://lh3.googleusercontent.com/hHaaMAK35w-NrBQaPV3Z_LnbqElnUnvZlHALWgMgHrpLltCI8xmrhQI0Ao_pCF0VN7tzwJpmm-wMDYLTnKOaHZD8yVDYedqtnEZfi1tptLd9MCzM6qP1WVIqaw46-I7c5AlXQTtXxg=w2400" alt="" class="image1">
+            </div>
+            <div id="hover2image" class="hoverimage ">
+                <img src="https://lh3.googleusercontent.com/UpmMidPx8in4HF36F3mS2NU4T2T2yoxZYmdRGsGRt0Qy_ZXYoU5e-VzDwv4bQu5jqu3o4nRVLwwtwA6wGcohh8lHZ3yEnGbsVb4ajsbz7ibedS-gqLdjLvfm4Brqd9DM-ONNBxjR4w=w2400" alt="" class="image4">
+            </div>
+            <div id="hover3image" class="hoverimage ">
+                <img src="https://lh3.googleusercontent.com/SK5ldWslP3mpoDvxa2BZEVgjKaI9wu0uuEfjKY5B3QP7gUTXMx_XdTL_8N5YSgC2wmvikXwIyySInGqhHYI7kjDkKRw7pL1Jeqn1hi31fnp96Gbs6OXG_nwXy5aa9DekfGNvU0V1HQ=w2400" alt="" class="image1">
+            </div>
+            <div id="hover4image" class="hoverimage ">
+                <img src="https://lh3.googleusercontent.com/c4sGgzVpcQS_o2C9xDYbsnzc3YVUtdREAAfUrWGnxf-WFpujitSHwTpnvbUddFJDqh0u8b2iQvQedoSUORJMkrSGkrjl9a14au1JYSksZ8MurzNO-dBvI9bZNajlHPSpBgFZFmbsIw=w2400" alt="" class="image1">
+            </div>
+            <div id="hover5image" class="hoverimage ">
+                <img src="https://lh3.googleusercontent.com/jBdnZHrKuG_MhIdedO6RmJIftv0ss_xarj7Jel-5zzSB_kSQ8maId_Z3vyM-uNM6WEzY3tRpu00GoALjPYPimmlIfU8-HNZReaGgUYrFlkZ7LFmnaA3TfBbL65_5BUAAJJmjwUrj9g=w2400" alt="" class="image1">
+            </div>
+            <div id="hover6image" class="hoverimage ">
+                <img src="https://lh3.googleusercontent.com/a-xD5veCwnyIRZkCoM8kzQYJh4EkuulXRFbxndOzP2pNKpgV6iI0HiIhNsIizeSrvUbPmz8LIvFLrul-oeUqc6I5X5Tc6ngBLkBRf1pRgaL1BYdMD8UfNseEHiA3RrJLgB7vAqOY2A=w2400" alt="" class="image1">
+            </div>
+            <div id="hover7image" class="hoverimage ">
+                <img src="https://lh3.googleusercontent.com/GBzYiy1j3ehXan_v_gN7D6ndLogIsytG-91Q1NCD14yxaZ3-MdC1EYOfy_nuYWR6kU-UoDy-ZcLojAbfxdwuvN_UNlm4BgCBI_insyBdxeBOKftomTgjVmC_WO05jaYkICSWG46eeg=w2400" alt="" class="image2">
+            </div>
+            <div id="hover8image" class="hoverimage ">
+                <img src="https://lh3.googleusercontent.com/pfEYXrETxg24MsNdoPmk3l12C6X_0FR2MjWVgn6A6ZNTsUAZugysJBH3BVN39XrQ9F8uVdT3zMznu4dktMMyLpRz_IztdfcRyPJllKn_YDOf9dahT3dcFVyResjSwJC_-J7Jen-PWg=w2400" alt="" class="image3">
+            </div>
+            <div id="hover9image" class="hoverimage ">
+                <img src="https://lh3.googleusercontent.com/pa512HV7YsoGGYQlrKkDj88Kt-Qrs1Co_h8BdKH90UF-p4b4XQJFgrruFynECZt2U1Zo5wFlMKOcZ9vmCX4ixQeGqTdhoAowaHs8NU_sR-8tPTSp76J6cesnI6jKk5gg-GFvnEvWWw=w2400" alt="" class="image3">
+            </div>
+            <div id="hover10image" class="hoverimage ">
+                <img src="https://lh3.googleusercontent.com/o3ESV8aT25k5LqrokdWOiQIIrwAcinSKwf0KSR_QzSfXXkkTG4x8AHa22s8gghOIIg5utLp04r8eQjkjnOQxNzudV3eBTk9DMuYlRVyxQWxOoxk0Ai_N-TfNpdQrWBpspd9viLAVJA=w2400" alt="" class="image3">
+            </div>
+
+
+
+            <div class="header">
+            <p>&#8618;</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <img src="https://lh3.googleusercontent.com/BIZY7Afaq6qdr8VNIh9PGsfX51PcupwlhbVdRVACvrgL5vIAKsa0YH3nl86GTmo9E98v7V2GuTpF8KHwyuahx6asVOiBYxMeL4DYLR64ihz_mD98QoaY_Gu3U3NmRpLe9PASC_x9pg=w2400" width="60%" style="margin-left: 20%; margin-right: 20%">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>
+                <div class="testoPrincipale">
+                   <div class="hovernumber" id="hover1">-</div>
+                </div>
+            </p>
+            
+            
+        
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <figure>
+            <img src="https://lh3.googleusercontent.com/e8L-jcHHZ_eVjtqGrNF5lGl_PNlbD5j6ezNgg-wXnCAj_pO2U_0W-xbgsj1rh8Fv0IRrIwWuS71G2uRcYBXNMLRS3iNnnBRK9WijU8itnh_8_ir25ktIXEXi8HblSPm6XIDvtNsHvg=w2400" width="60%" style="margin-left: 20%; margin-right: 20%">
+            <figcaption></figcaption>
+            </figure>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="https://lh3.googleusercontent.com/DQmqHLGn_3szUZnR7LRaPCwejR-468ZvnnNIRrFZC0ZxO6A3Y0QLZoLw4t1GztNvePl423ceE7WAZCjJE-TKFTivNoKEYg7GQ2-WaaGvBFrFQv8VfjWzUIk0NcT9VEK2dttJ8FdDTQ=w2400" width="60%" style="margin-left: 20%; margin-right: 20%">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="https://lh3.googleusercontent.com/s5dQoweCX5kwIrRDBbXMtnUYuXOJWHJZDi1K4P0uR8xvNKGkSTmt1yI2qpJFuibBlrW6JB7wkXkog3YSojmpp5W00Zo_FpfqhMvu3lg00dl5xIBwvrIIs2NpfG_fSrwhK-VoE2sKSQ=w2400" width="60%" style="margin-left: 20%; margin-right: 20%">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="https://lh3.googleusercontent.com/KMkdPk3iM-rC7kY5Gp2qL9vYhWuIXGjD-2xF3pMfjkHPGgTYD5X7XoX0AMD6TuVbMehrbrifrFzq-Uw-4QqsLgs5PbL2q6XnTd_bNyKolh12e-E7O2C4cqtJCi9BoX3lcgONzpx5yA=w2400" width="60%" style="margin-left: 20%; margin-right: 20%">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="https://lh3.googleusercontent.com/oniHwbAy2V-t72ckTNhU6DtK8XxY4z5P_BK8D-kBhO4DlnE606B4_Xe8JR0I47x_zf4UIXTGz3oJsEkSKWIH3jng0LBL-jlyBffMbOfBNFAuhJq2tDSRO08ZR9QKU_CLNkF7prkF1A=w2400" width="60%" style="margin-left: 20%; margin-right: 20%">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="https://lh3.googleusercontent.com/OrAi58eOpt7F0ODcuyouzwZUnnlmWAXlT1qsfi3U-ygNsjPH1RdXcin9HKOmCBKBg_IcrOhgYf7VSN6y6Afdwjl-65rmJeV0oHsYctzaADIbJUIdivZs_WGFux0yqAU_0vIsTOGuJA=w2400" width="60%" style="margin-left: 20%; margin-right: 20%" id="imgClickAndChange" onclick="changeImage1()">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>
+                <div class="testoPrincipale">
+                    1.1 LANDING ON EARTH
+                </div>
+            </p>
+            <p>
+                <div class="testoPrincipale">
+                   <div class="hovernumber" id="hover6">-</div>
+                </div>
+            </p>
+            <br>
+
+         
+            <p>
+                <div class="testoPrincipale">On August 23, 2017, the National Weather Service issued a hurricane warning, and Texas declared a state of emergency for thirty counties. </div>
+            </p>
+            <br>
+            <br>
+            <p>
+                <div class="testoPrincipale3">“Harvey was incredible because of how quickly it intensified as it approached land”</div>
+            </p>
+            <p>
+                <div class="testoPrincipale2">_Jordan Gerth, a research meteorologist at the University of Wisconsin–Madison’s Space Science and Engineering Center</div>
+            </p>
+            <br>
+            <br>
+            <p>
+                <div class="testoPrincipale">NASA administrator Jim Bridenstine made similar comments to the House Science Committee: “That part of the electromagnetic spectrum is necessary to make predictions as to where a hurricane is going to make landfall”. Harvey’s path fell within the <div class="hovertext" id="hover7">cone of uncertainty</div>.  which has narrowed in the years since as forecast technologies have improved.</div>
+            </p>
+            <br>
+            <img src="https://lh3.googleusercontent.com/7UenzULh7GjtZxD6WnJn67BPdQGbWJXs1MttmIo4CnhMIk4ZYBWbvLDRT40LNTq5enF1xUf0_EgL4fvjuGmnxF6jKY5vSo5xNADATFrPj2vY5mMfwMw2SQQvNezWeYIZR3oGFPv6Ig=w2400" width="60%" style="margin-left: 20%; margin-right: 20%" id="imgClickAndChange2" onclick="changeImage2()">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>
+                <div class="testoPrincipale">
+                    1.2 FINITE SPACE
+                </div>
+            </p>
+            <br>
+            <p>
+                <div class="testoPrincipale">On may 13th 2019 Senators Ron Wyden (D-OR) and Maria Cantwell (D-WA) sent a letter to Pai, the Federal Communication Commission chairman where they ask  to not award any final 24GHz licenses or allow carriers to operate in the 24GHz band until it can protect satellite measurements in the way that NASA and NOAA believe they need to be protected. </div>
+            </p>
+            <br>
+            <img src="https://lh3.googleusercontent.com/y9aBRQrvBOBfbGwgXoDC7oHPHoTJWYJ2d-bEddiz-lYfb4bJIcSG2eFbjOcoSkwPtUEB27bEthMvtRB-EOWON9s5tbTcHfF-ZdiR4XZSn6X04zOHn0JuLcI2x5Wc2C4qpGaahdH1hQ=w2400" width="80%" style="margin-left: 10%; margin-right: 10%" id="imgClickAndChange4" onclick="changeImage4()">
+            <br>
+            <br>
+            <img src="https://lh3.googleusercontent.com/p3glbbfBXCbJpCzCttFHbFqCkEeByfe-sL2P0ZOI4NL1j6T_dtv-M5tH4zArHnxHGAuL6X9S36nkSt4OxsFAzjqUDzzjNAcwUcexIf_TcmIIEjkknA6B_5tMjCY1_7d7ilMb_NcOBQ=w2400" width="90%" style="margin-left: 5%; margin-right: 10%">
+            <br>
+            <br>
+            <img src="https://lh3.googleusercontent.com/6hJFGUYb5hDGHVmSKsewYbYWrR300zHVDG9OMlI4Gd3dZf5lp3VE9smTZ5v_EMN8K3eyeh-H2l4gMY47xZAt_h2qsBFZAb-Qk4th27-3pxHqxMfoCbpuRL9U_y_yyHWdueC2JZSg9g=w2400" width="80%" style="margin-left: 10%; margin-right: 10%">
+            <br>
+            <br>
+            <img src="https://lh3.googleusercontent.com/ETwFPCiqLhX8NJxawV5Ravb8ORWuHE0W7FLQzWixxR9pX9UVy7A5-og2B4L6rfVbOYcqYc03aFvgEk1Q5EmXK4NaM6wC3n2_nDVVNmYK1nrS-uh1xUfMx2mth80TGdGpSTv8VwHsVA=w2400" width="80%" style="margin-left: 10%; margin-right: 10%">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>
+                <div class="testoPrincipale">Allocating the airwaves is one of the principal functions of the FCC, and the agency has tried various strategies to open up to private enterprise in the past. The FCC, auctioning off spectrum rights has generated $114.6 billion in revenue from spectrum licensing, making it one of the few arms of the federal government to earn more than it spends. </div>
+            </p>
+            <br>
+            <img src="https://lh3.googleusercontent.com/KlX8O4sXvAIE-_mmbxb2VyN6pERobo5CdVQ7mCHpFPzd_mdBZzuqQB_ZU_t9qhlKgybYJw7tUnwFSLV-YPA-eTPC1HGlLp3G76J695vElNqw-JLn1caYsCPkyakk5u8oyzhFxvh2gw=w2400" width="90%" style="margin-left: 5%; margin-right: 5%" id="imgClickAndChange7" onclick="changeImage7()">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>
+                <div class="testoPrincipale">
+                    1.2.1 WEATHER
+                </div>
+            </p>
+            <p>
+                <div class="testoPrincipale">
+                   <div class="hovernumber">-</div>
+                </div>
+            </p>
+            <br>
+
+         
+            <p>
+                <div class="testoPrincipale">International and national regulatory organizations have set aside certain portions of the microwave spectrum for passive observational purposes. This type of sensing is essential in determining the state of the atmosphere.</div>
+            </p>
+            <br>
+            <img src="https://lh3.googleusercontent.com/KBGn0G7A-vC-HZmsR4VHip9TwWPY-TttEqXCJYv-9UDidRx0RbPOFlf2BW6ZOeEel61giUe83fquya6ErHBkx4LN3D7c5HbCwri_NLDXQqD0_V25rqFvroKesNZ585J6qlUfWxLQMQ=w2400" width="60%" style="margin-left: 20%; margin-right: 20%" id="imgClickAndChange8" onclick="changeImage8()">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="testoPrincipale">
+                1.2.2 INTERNET
+            </div>
+        </p>
+        <p>
+            <div class="testoPrincipale">
+               <div class="hovernumber">-</div>
+            </div>
+        </p>
+        <br>
+        <p>
+            <div class="testoPrincipale">The wireless industry agreed to standards for 5G and started to build out equipment and infrastructure, which meant that companies needed more spectrum real estate. The Federal Communications Commission set off to campaign “aggressively” to open the greenfield for business and expand the nation’s network capabilities. </div>
+        </p>
+        <br>
+            <img src="https://lh3.googleusercontent.com/L9s1zngO4w43ZCnt8gvzEc0Nj7LfwyT_87KFTk1Kh_FLTYgOs2cy1oIJNwZb8rdUpSh8X9WQ4zkiuOm_lnUGQ0_BMUC40Hb9r4azYlA2B4DOPz_IUQOBgwzcxgyl4L3S43HkC2MNYw=w2400" width="60%" style="margin-left: 20%; margin-right: 20%" id="imgClickAndChange9" onclick="changeImage9()">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <img src="https://lh3.googleusercontent.com/r4vDyB7Ao5joJ9PLHYuQaBNpqz-l8OrXVkr7bqxrEisjNwHB_sgJcWLseab_IbKApfX33MVAhXopbBnxCz5g8Ga4UR-8JkXMbeiZL5aJZrQl6HIupm-CHfvz4_UpwMj6YaIjQq6N5Q=w2400" width="60%" style="margin-left: 20%; margin-right: 20%">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="testoPrincipale">
+                2 INFRASTRUCTURE
+            </div>
+        </p>
+        <br>
+        <p>
+            <div class="testoPrincipale"><div class="hovertext" id="hover2">Critical Proximity</div>, which generates uncertainty and disturbance, is mainly caused by the physical and spatial proximity that these systems have in acquiring and receiving data. Specifically, the two system scales involve on the ground, Weather radar (Doppler) and Antennas for 5G data transmission and reception, and above, the satellite system, weather satellites such as NOAA's GOES and the newer and future generation where companies are working on the next generation of satellite internet launch them into low-Earth orbit (LEO).
+ </div>
+        </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        
+
+            <div class="testotabella">
+                <button class="A" onclick = "createPopupWin('https://docs.google.com/spreadsheets/d/e/2PACX-1vSKUzDQQWxyj-ZOJr3RUpVYZkWM7fPWeOosYp5d1Y8n5VAsg1ROvRLoIuZw2m_WO9XaLsxXy37_bCDx/pubhtml',
+                'BELOW', 1200, 650);">
+                <p>2.1 BELOW</p>  
+                </button> 
+            </div>
+        </p>
+        <p>
+            <div class="testoPrincipale">
+               <div class="hovernumber" id="hover8">0</div>
+            </div>
+        </p>
+            
+            <img src="https://lh3.googleusercontent.com/KYFXMV-popC1APMfz3BMcyp91b3ii8css35YPJ-Jw4RhFqzqQybcaRruQzTjxBze77MueoMEUQMm2fEGNBTxV04atzWU8PGPUEIIY7mm0ccMwJ-ejbCg4BkUFID8xVlGTm7CcMbmjA=w2400" width="60%" style="margin-left: 20%; margin-right: 20%">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="testotabella">
+                <button class="A" onclick = "createPopupWin('https://docs.google.com/spreadsheets/d/e/2PACX-1vS4JwYApUlCyEgnmJ46q1V0XAcJCRBAAQqEFpcYvadA0p6H6JL5hICNIeYbUnAAdGXLAmntPg8ssZhV/pubhtml',
+                'ABOVE', 1200, 650);">
+                <p>2.2 ABOVE</p>  
+                </button> 
+            </div>
+        </p>
+        <p>
+            <div class="testoPrincipale">
+               <div class="hovernumber" id="hover9">1</div>
+            </div>
+        </p>
+          
+            <img src="https://lh3.googleusercontent.com/qYDyza-DNFfkR4lZe9Frl17ESHunrJpjQM64cKi4B5atAtDtK0DT2fW6kzwG3PimzCa3dWY-pOP2fkKgALz3LQdL-EGMrmUBUVrOdOwuYSalNF8fR5hLnyaeyHOTfTfc0nooahsKzw=w2400" width="60%" style="margin-left: 20%; margin-right: 20%">
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="testoPrincipale">
+                2.3 CRITICAL ZONE
+            </div>
+            <div class="testoPrincipale">
+                <div class="hovernumber" id="hover10">-</div>
+             </div>
+             
+            <br>
+            <p>
+                <div class="testoPrincipale">A spot on the envelope of the biosphere which extends vertically from the top of the lower atmosphere down to the so-called sterile rocks and horizontally wherever it is possible to obtain reliable data on the various fluxes of ingredients flowing through the chosen site.
+                </div>
+            </p>
+            <br>
+            <p>
+                <div class="testoPrincipale3">“The word “critical” in it, means that under stress, it may break down entirely or shift to another state, while the word “zone” implies that it traces something like a border (vertically as well as horizontally)”</div>
+            </p>
+            <p>
+                <div class="testoPrincipale2">_Bruno Latour, Geochemistry of the Earth’s Surface meeting GES-10, - Some advantages of the notion of “Critical Zone” for Geopolitics - 2014</div>
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="https://lh3.googleusercontent.com/mFutwVfmGNELdntdp8Rb7fhAzYIijYXHdRIjWVunkKWVTGJmKwdb6RNeD1_coFM13W5enaYACxTiFIBYYgfxIVJ2bus54HDZxXJgWsPib-sELoqmY2oFNBe3-eWi_jztGAMvaVUbVg=w2400" width="60%" style="margin-left: 20%; margin-right: 20%" id="imgClickAndChange11" onclick="changeImage11()">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="cerchio">
+
+                <div id="SectionName3" style="display:none"> <br> </div>
+
+               </div>
+               <br>
+               <img src="https://lh3.googleusercontent.com/c4sGgzVpcQS_o2C9xDYbsnzc3YVUtdREAAfUrWGnxf-WFpujitSHwTpnvbUddFJDqh0u8b2iQvQedoSUORJMkrSGkrjl9a14au1JYSksZ8MurzNO-dBvI9bZNajlHPSpBgFZFmbsIw=w2400" width="60%" style="margin-left: 20%; margin-right: 20%">
+               <br>
+               <br>
+               <br>
+               <div class="cerchio2">
+                    
+              
+                <div id="SectionName3" style="display:none"> <br> </div>
+
+               </div>
+                <br>
+                <img src="https://lh3.googleusercontent.com/SK5ldWslP3mpoDvxa2BZEVgjKaI9wu0uuEfjKY5B3QP7gUTXMx_XdTL_8N5YSgC2wmvikXwIyySInGqhHYI7kjDkKRw7pL1Jeqn1hi31fnp96Gbs6OXG_nwXy5aa9DekfGNvU0V1HQ=w2400" width="60%" style="margin-left: 20%; margin-right: 20%">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+          
+
+
+        </div>
+
+
+
+<!--right--> 
+        <div class="right">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <img src="https://lh3.googleusercontent.com/FMQBc6hmXx5GYXj4gC2jDPfwYs3OMsVUhFwYvOziX4I2RLzEZyuGQG43zAgFHspKmlnXKxprQrp7PGoj5nwKSBRtZ0Ifmx5P4o975U2-Yubs4rLGAab4OE8HGqbIF3Jx669PCXahMw=w2400" width="60%" style="margin-left: 20%; margin-right: 20%">
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+
+            <p>
+                <div class="testoPrincipale">
+                   <div class="hovernumber" id="hover5">-</div>
+                </div>
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+               <!-- <p>
+                    <div class="testoPrincipale">
+                        <div class="hovertext" id="hover2">_SPECTRUM FIGHT</div> 
+                        <br>
+                        <div class="hovertext" id="hover3">_NUMERICAL MODEL</div>
+                        <br>
+                        <div class="hovertext" id="hover4">_INTERFACE OF INTERFERENCE</div>
+                    </div>
+                </p>
+                -->
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              
+                <p>
+                    _SPECTRUM FIGHT
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <img src="https://lh3.googleusercontent.com/AWwNrYbvcFOui2fSPVkbdABZHmvnM3hEwZU2EhmRM3xVKEBavjq0LlDNBVpAfC0FJq8kQsf5p0kKhjXTNbEO91lsVtXBvr16llw2Sofb1rY2JI8oDM_ZXfdMb7oNPDjxEDsULuAiRg=w2400" width="60%" style="margin-left: 20%; margin-right: 20%" id="imgClickAndChange3" onclick="changeImage3()">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="cerchio">
+
+                <button class="B" onclick="ShowAndHide()"></button>
+                <div id="SectionName" style="display:none">70% DATA LOST FROM SATELLITES <br> Dr. Neil Jacobs NOAA National Oceanic and Atmospheric Administration</div>
+
+               </div>
+
+               <div class="cerchio2">
+                    
+                <button class="C" onclick="ShowAndHide2()"></button>
+                <div id="SectionName2" style="display:none">30% REDUCTION OF FORECAST ABILITY <br> Dr. Neil Jacobs NOAA National Oceanic and Atmospheric Administration</div>
+
+               </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <img src="https://lh3.googleusercontent.com/AWwNrYbvcFOui2fSPVkbdABZHmvnM3hEwZU2EhmRM3xVKEBavjq0LlDNBVpAfC0FJq8kQsf5p0kKhjXTNbEO91lsVtXBvr16llw2Sofb1rY2JI8oDM_ZXfdMb7oNPDjxEDsULuAiRg=w2400" width="60%" style="margin-left: 20%; margin-right: 20%" id="imgClickAndChange5" onclick="changeImage5()">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <img src="https://lh3.googleusercontent.com/AWwNrYbvcFOui2fSPVkbdABZHmvnM3hEwZU2EhmRM3xVKEBavjq0LlDNBVpAfC0FJq8kQsf5p0kKhjXTNbEO91lsVtXBvr16llw2Sofb1rY2JI8oDM_ZXfdMb7oNPDjxEDsULuAiRg=w2400" width="60%" style="margin-left: 20%; margin-right: 20%" id="imgClickAndChange6" onclick="changeImage6()">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>
+                    _NUMERICAL MODEL
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <img src="https://lh3.googleusercontent.com/PfSmJ7PXk7e35beMph6AtLP_aRbgBmpNfYQBcClGN0HtreXIJATqE0LApfemQk8vGPtOOkCZp2aQoLauIFgYX1zJtLOu4oCW5U3HswctRoDyHfmAp52wbtrMs8VoDlKGiHQkFkYOZA=w2400" width="80%" style="margin-left: 10%; margin-right: 10%" id="imgClickAndChange10" onclick="changeImage10()">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>
+                    _INERFACE OF INTERFERENCE
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <img src="https://lh3.googleusercontent.com/AWwNrYbvcFOui2fSPVkbdABZHmvnM3hEwZU2EhmRM3xVKEBavjq0LlDNBVpAfC0FJq8kQsf5p0kKhjXTNbEO91lsVtXBvr16llw2Sofb1rY2JI8oDM_ZXfdMb7oNPDjxEDsULuAiRg=w2400" width="60%" style="margin-left: 20%; margin-right: 20%" id="imgClickAndChange12" onclick="changeImage12()">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="cerchio">
+
+                    
+                    <div id="SectionName3" style="display:none"><br> </div>
+    
+                   </div>
+                   <br>
+                   <img src="https://lh3.googleusercontent.com/lmZ5NSDLmKrGm1GrOFVg4InJ2QWjO9479UTznqGlqMwAZwBKIxdzE1Naktzs2-n8qxGoiojyG-5syzrAXjjVZroMRaDk1aWfuSte2IDxN0MNN8if4dL3BQ-VKyXhVkndFepJAFlfRg=w2400" width="60%" style="margin-left: 20%; margin-right: 20%">
+                   <br>
+                   <br>
+                   <br>
+                   <div class="cerchio2">
+                        
+                    
+                    <div id="SectionName3" style="display:none"><br></div>
+    
+                   </div>
+                    <br>
+                    <img src="" width="60%" style="margin-left: 20%; margin-right: 20%">
+                    <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+        </div>
+
+    </div>
+
+
+
+<div id="popup">
+    <div class="olla"> 
+        <img src="https://lh3.googleusercontent.com/QnNztcCubz3OMYSzeKMtnRNVzLdWh2RQcJux5qXKoHWxxsC124GCQ7TGhxardXRXyoCV4HUQoU6DtBxAvrrAAFOj_uOHhrvOniJQz6nzZo0oN72eU9_lSKQEBQRohogICuJVerIphg=w2400" class="center" />
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

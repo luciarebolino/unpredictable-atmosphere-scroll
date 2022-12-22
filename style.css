@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Inter+Tight&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'Diatype' ;
+    src: url(fonts/ABCDiatype-Regular-Trial.woff);
+}
+
+@font-face {
+  font-family: 'Everett' ;
+  src: url(fonts/TWKEverett-Regular-web.woff);
+}
+
+@font-face {
+  font-family: 'Everett1' ;
+  src: url(fonts/TWKEverett-Thin-web.woff);
+}
+
+html, body {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    line-height: 1.1;
+    background-color: #000000;
+    display: block;
+    overflow: scroll;
+    overflow-x:hidden;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    line-height: 1.1;
+    font-weight:lighter;
+    color: #ffffff;
+    display: block; 
+}
+
+h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    stroke: bla;
+  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    position: fixed;
+    bottom: 12px;
+    left: 10px;
+    z-index: 10;
+  
+}
+
+.header {
+    position: fixed;
+    top: 12px;
+    left: 10px;
+    z-index: 10;
+}
+
+.container {
+    margin: 0px;
+    display: flex;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.left, .right {
+    width: 50vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.left {
+    border-right: 1px solid black;
+    padding: 10px 10px 10px 10px;
+}
+
+.right {
+  border-right: 1px solid black;
+  padding: 10px 10px 10px 10px;
+}
+
+.testoPrincipale{
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    line-height: 1.1;
+    font-weight:lighter;
+    color: #ffffff;
+    display: block; 
+    font-weight:300px;
+}
+
+.testoPrincipale2{
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 1.1;
+  font-weight:lighter;
+  color: #ffffff;
+  display: block; 
+  font-weight:300px;
+  padding-top: 20px;
+  
+}
+
+.testoPrincipale3{
+  font-family: 'Inter', sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  line-height: 1.1;
+  font-weight:lighter;
+  color: #ffffff;
+  display: block; 
+  font-weight:300px;
+}
+
+
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    scale: 380%;
+    z-index: 1;
+  }
+
+
+
+.A{
+    background-color: #ffffff00;
+    border:none;
+}
+
+#popup{
+  width: 280px;
+  height: 180px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 10px;
+  margin-top: -100px;
+  margin-left: -150px;
+  z-index: 999;
+  background-color: #aaa;
+}
+
+
+
+
+
+
+
+
+
+.image1{
+    height: auto;
+    width: 50%;
+    margin-top: 220px;
+    position:absolute;
+    margin-bottom: 100px;
+    margin-left: 25%;
+    margin-right: 25%;
+    }
+
+
+    .image4{
+      height: auto;
+      width: 50%;
+      margin-top: 50px;
+      position:absolute;
+      margin-bottom: 100px;
+      margin-left: 25%;
+      margin-right: 25%;
+      }
+
+    .image3{
+      height: auto;
+      width: 50%;
+      margin-top: 100px;
+      position:absolute;
+      margin-bottom: 100px;
+      margin-left: 25%;
+      margin-right: 25%;
+      }
+  
+
+    .image2{
+      height: auto;
+      width: 40%;
+      margin-top: 220px;
+      position:absolute;
+      margin-bottom: 100px;
+      margin-left: 5%;
+      margin-right: 55%;
+      }
+
+
+
+  .inner:hover img {
+    display: block;
+    z-index: 4;
+  }
+  
+  .hovertext  {
+    display: inline-block;
+    /*border: 1px solid red;*/
+    text-decoration: line-through;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-thickness: 1px;
+  }
+
+  .hovernumber  {
+    display: inline-block;
+    font-size: 25px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration-color: rgb(0, 0, 0);
+    z-index: 4;
+  }
+  
+  
+  .hoverimage {
+    display: none;
+  }
+  
+  .hoverimage.show {
+    display: block;
+    z-index: 3;
+  }
+  
+
+
+
+  figcaption{
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+  }
+
+
+
+
+.B{
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+
+ 
+}
+
+.C{
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+
+ 
+}
+
+
+
+.cerchio{
+  display: flex;
+  width: auto;
+  height: auto;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  padding: 10px 10px 10px 10px;
+
+  }
+
+
+  .cerchio2{
+    display: flex;
+    width: auto;
+    height: auto;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 10px 10px 10px 10px;
+    }
+
+
+  #SectionName{
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    color: #ffffff;
+    padding-left: 10px;
+
+  }
+
+  #SectionName2{
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    color: #ffffff;
+    padding-left: 10px;
+
+  }
+
+  #SectionName3{
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    color: #ffffff;
+    padding-left: 10px;
+
+  }
